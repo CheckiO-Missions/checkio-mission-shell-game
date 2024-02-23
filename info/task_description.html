@@ -1,18 +1,18 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    Em um jogo que envolve uma moeda e três copos opacos posicionados em linha (A, B, e C), o jogador "banca" realiza uma série de movimentos para trocar a posição de dois copos, mantendo a moeda sob o copo se ela estiver envolvida no movimento. Dada a posição inicial da moeda e uma sequência de movimentos realizados pela "banca", você deve determinar a posição final da moeda. Os movimentos são: 1) trocar A e B, 2) trocar B e C, e 3) trocar A e C.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma lista onde o primeiro elemento é um inteiro N, representando o número de movimentos realizados, seguido por um caractere indicando a posição inicial da moeda ('A', 'B', ou 'C'), e N inteiros subsequentes representando os movimentos.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Um caractere indicando a posição final da moeda ('A', 'B', ou 'C').
 </p>
 
 
@@ -28,7 +28,10 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    jogo_dos_copos(3, 'A', [1, 2, 3]) >> 'A'
+jogo_dos_copos(6, 'C', [1, 2, 3, 3, 1, 1]) >> 'B'
+jogo_dos_copos(1, 'B', [3]) >> 'B'
+
 </pre>
 {% endif %}
 </div>
