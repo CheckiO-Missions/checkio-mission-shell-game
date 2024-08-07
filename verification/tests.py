@@ -50,7 +50,11 @@ TESTS = {
     {
         "input": ['B', [3]],
         "answer": "B",
-    }
+    },
+    {
+        "input": ['B', []],
+        "answer": "B",
+    },
     ], 
     "Random": rand,
 }
