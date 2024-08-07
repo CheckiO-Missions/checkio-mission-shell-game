@@ -11,16 +11,16 @@ Each test is a dict with
 TESTS = {
     "Basics": [
             {
-        "input": [3, 'A', [1, 2, 3]],
-        "answer": "A"
+        "input": ['A', [1, 2, 3]],
+        "answer": "A",
     },
     {
-        "input": [6, 'C', [1, 2, 3, 3, 1, 1]],
-        "answer": "B"
+        "input": ['C', [1, 2, 3, 3, 1, 1]],
+        "answer": "B",
     },
     {
-        "input": [1, 'B', [3]],
-        "answer": "B"
+        "input": ['B', [3]],
+        "answer": "B",
     }
     ]
 }

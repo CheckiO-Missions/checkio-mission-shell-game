@@ -1,37 +1,27 @@
 <!-- Describe task in general -->
-
-<p>
-    Em um jogo que envolve uma moeda e três copos opacos posicionados em linha (A, B, e C), o jogador "banca" realiza uma série de movimentos para trocar a posição de dois copos, mantendo a moeda sob o copo se ela estiver envolvida no movimento. Dada a posição inicial da moeda e uma sequência de movimentos realizados pela "banca", você deve determinar a posição final da moeda. Os movimentos são: 1) trocar A e B, 2) trocar B e C, e 3) trocar A e C.
+<p style="text-align: justify;">
+    In the <a target="_blank" href="https://en.wikipedia.org/wiki/Shell_game">Shell game</a>  involving a coin and three opaque shells positioned in a line (A, B, and C), the "banker" player makes a series of moves to change the position of two shells, keeping the coin under the shell. Given the initial position of the coin and a sequence of moves made by the "banker", you must determine the final position of the coin. The moves are: 1 - swap A and B, 2 - swap B and C, and 3 - swap A and C.
 </p>
 
-<img  title="example" src="{{MEDIA}}jogo-dos-copos.png" alt="example" style="max-height: 300px"/>
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}shell-game.svg" alt="example" style="max-height: 300px"/>
+</p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> Uma lista onde o primeiro elemento é um inteiro N, representando o número de movimentos realizados, seguido por um caractere indicando a posição inicial da moeda ('A', 'B', ou 'C'), e N inteiros subsequentes representando os movimentos.
+    <strong>Input:</strong> Two arguments: a character (<span translate="no">str{% if is_js %}ing{% endif %}</span>) indicating the starting position of the coin ('A', 'B', or 'C'), and <span translate="repeat">{% if is_js %}array{% else %}list{% endif %}</span> of moves as integers (<span translate="no">{% if is_js %}number{% else %}int{% endif %}</span>).
 </p>
 
 <p>
-    <strong>Saída: </strong> Um caractere indicando a posição final da moeda ('A', 'B', ou 'C').
+    <strong>Output:</strong> A character of final position.
 </p>
 
 
 <!-- Put some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Examples:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">countConsecutiveSummers(42) == 4
-countConsecutiveSummers(99) == 6
-</pre>
-{% else %}
-<pre class="brush: python">
-    jogo_dos_copos(3, 'A', [1, 2, 3]) >> 'A'
-jogo_dos_copos(6, 'C', [1, 2, 3, 3, 1, 1]) >> 'B'
-jogo_dos_copos(1, 'B', [3]) >> 'B'
-
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
