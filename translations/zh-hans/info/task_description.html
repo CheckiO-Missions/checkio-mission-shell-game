@@ -1,0 +1,27 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    在涉及一枚硬币和三个排成一行的不透明贝壳（A、B 和 C）的<a target="_blank" href="https://en.wikipedia.org/wiki/Shell_game">Shell game</a> 中，"庄家 "通过一系列的移动来改变两个贝壳的位置，同时保持硬币在贝壳下面。给定硬币的初始位置和 "庄家 "的一系列移动，您必须确定硬币的最终位置。这些移动是1 - 交换 A 和 B，2 - 交换 B 和 C，3 - 交换 A 和 C。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}shell-game.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>两个参数：一个字符 (<span>str{% if is_js %}ing{% endif %}</span>) 表示硬币的起始位置（"A"、"B "或 "C"），以及{% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}array{% else %}list{% endif %})</span>的整数 (<span>{% if is_js %}number{% else %}int{% endif %}</span>).
+</p>
+
+<p>
+   <strong>输出：</strong>最终位置的字符。
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>举例说明</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
