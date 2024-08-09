@@ -1,0 +1,27 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    W grze <a target="_blank" href="https://en.wikipedia.org/wiki/Shell_game">Shell game</a> z monetą i trzema nieprzezroczystymi muszlami ustawionymi w linii (A, B i C), gracz "bankier" wykonuje serię ruchów, aby zmienić pozycję dwóch muszli, utrzymując monetę pod muszlą. Biorąc pod uwagę początkową pozycję monety i sekwencję ruchów wykonanych przez "bankiera", należy określić ostateczną pozycję monety. Ruchy są następujące: 1 - zamiana A i B, 2 - zamiana B i C oraz 3 - zamiana A i C.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}shell-game.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> Dwa argumenty: znak (<span>str{% if is_js %}ing{% endif %}</span>) wskazujący pozycję początkową monety ('A', 'B' lub 'C') oraz tablica {% if is_js %}{% else %} lista{% endif %} <span>({% if is_js %}array{% else %}list{% endif %})</span> ruchów jako liczby całkowite (<span>{% if is_js %}number{% else %}int{% endif %}</span>).
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Znak pozycji końcowej.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Przykłady:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
